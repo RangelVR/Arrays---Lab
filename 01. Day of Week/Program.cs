@@ -14,16 +14,23 @@ namespace _01._Day_of_Week
             "Saturday", "Sunday"};
             
 
-            for (int i = 0; i <= daysOfWeak.Length - 1; i++)
+            if (input > 0 && input <= 7)
             {
-                int index = i;
-
-                if (index == numOfDay)
+                for (int i = 0; i <= daysOfWeak.Length - 1; i++)
                 {
-                    day = daysOfWeak[i];
-                    Console.WriteLine(day);
+                    int index = i;
+
+                    if (index == numOfDay)
+                    {
+                        day = daysOfWeak[i];
+                        Console.WriteLine(day);
+                    }
+
                 }
-                
+            }
+            else
+            {
+                Console.WriteLine("Invalid day!");
             }
             
         }
