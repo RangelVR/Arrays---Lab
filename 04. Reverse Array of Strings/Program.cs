@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _04._Reverse_Array_of_Strings
@@ -11,13 +11,13 @@ namespace _04._Reverse_Array_of_Strings
                 .Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .ToArray();
 
-            //Array.Reverse(input);
-            //Console.WriteLine(string.Join(" ", input));
+            Array.Reverse(input);
+            Console.WriteLine(string.Join(" ", input));
 
-            for (int i = input.Length - 1; i >= 0; i--)
-            {
-                Console.Write($"{input[i]} ");
-            }
+            //for (int i = input.Length - 1; i >= 0; i--)
+            //{
+            //    Console.Write($"{input[i]} ");
+            //}
         }
     }
 }
