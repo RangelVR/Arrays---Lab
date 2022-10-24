@@ -6,14 +6,12 @@ namespace _01._Day_of_Week
     {
         static void Main(string[] args)
         {
-            int numOfDay = int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
+            string[] weekDays = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
-            string[] daysOfWeak = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
-            "Saturday", "Sunday"};
-
-            if (numOfDay > 0 && numOfDay <= 7)
+            if (n > 0 && n < 8)
             {
-                Console.WriteLine(daysOfWeak[numOfDay - 1]);
+                Console.WriteLine(weekDays[n - 1]);
             }
             else
             {
