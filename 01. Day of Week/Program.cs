@@ -18,32 +18,25 @@ namespace _01._Day_of_Week
                 Console.WriteLine("Invalid day!");
             }
             
-            //int input = int.Parse(Console.ReadLine());
-            //int numOfDay = input - 1;
-            //string day = string.Empty;
-
-            //string[] daysOfWeak = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
-            //"Saturday", "Sunday"};
-
-            //if (input > 0 && input <= 7)
+            //int n = int.Parse(Console.ReadLine());
+            //string[] weekDays = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+            //
+            //for (int i = 0; i < weekDays.Length; i++)
             //{
-            //    for (int i = 0; i <= daysOfWeak.Length - 1; i++)
+            //    if (n > 0 && n < 8)
             //    {
-            //        int index = i;
-
-            //        if (index == numOfDay)
+            //        if (i == n - 1)
             //        {
-            //            day = daysOfWeak[i];
-            //            Console.WriteLine(day);
+            //            Console.WriteLine(weekDays[i]);
+            //            break;
             //        }
-
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Invalid day!");
+            //        break;
             //    }
             //}
-            //else
-            //{
-            //    Console.WriteLine("Invalid day!");
-            //}
-
 
         }
     }
