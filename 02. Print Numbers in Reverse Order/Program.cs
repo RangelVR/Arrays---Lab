@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace _02._Print_Numbers_in_Reverse_Order
+namespace demo
 {
     class Program
     {
@@ -12,28 +12,34 @@ namespace _02._Print_Numbers_in_Reverse_Order
             for (int i = 0; i < n; i++)
             {
                 numbers[i] = int.Parse(Console.ReadLine());
-                 
             }
-            //for (int i = numbers.Length - 1; i >= 0; i--)
-            //{
-            //    Console.Write($"{numbers[i]} ");
-            //}
-            Array.Reverse(numbers);
+            for (int i = numbers.Length - 1; i >= 0; i--)
+            {
+                Console.Write(numbers[i] + " ");
+            }
 
-            Console.WriteLine(string.Join(" ", numbers));
-            
             
             //int n = int.Parse(Console.ReadLine());
-            //int[] numbers = new int[n];
-            //          
+            //int[] arr = new int[n];
+            //
             //for (int i = 0; i < n; i++)
             //{
-            //    numbers[i] = int.Parse(Console.ReadLine());
+            //    arr[i] = int.Parse(Console.ReadLine());
             //}
-            //for (int i = numbers.Length - 1; i >= 0; i--)
+            //Array.Reverse(arr);
+            //Console.WriteLine(string.Join(" ", arr));
+
+
+            //for (int i = 0; i < n; i++)
             //{
-            //    Console.Write(numbers[i] + " ");
+            //    int currNum = int.Parse(Console.ReadLine());
+            //    arr[i] = currNum;
             //}
+            //for (int i = arr.Length - 1; i >=0 ; i--)
+            //{
+            //    Console.Write(arr[i] + " ");
+            //}
+
         }
     }
 }
