@@ -1,27 +1,23 @@
-﻿using System;
+using System;
 using System.Linq;
 
-namespace _05._Sum_Even_Numbers
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[] num = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse)
-                .ToArray();
-
+            int[] arr = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
             int sum = 0;
 
-            for (int i = 0; i <= num.Length - 1; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (num[i] % 2 == 0)
+                int n = arr[i];
+                if (n % 2 == 0)
                 {
-                    sum += num[i];
+                    sum += n;
                 }
             }
-
             Console.WriteLine(sum);
         }
     }
