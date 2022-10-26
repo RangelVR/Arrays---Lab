@@ -1,29 +1,28 @@
-﻿using System;
+using System;
 using System.Linq;
 
-namespace _07._Equal_Arrays
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[] firstArr = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+            int[] arr1 = Console.ReadLine()
+                .Split(" ")
                 .Select(int.Parse)
                 .ToArray();
-            int[] secondArr = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+            int[] arr2 = Console.ReadLine()
+                .Split(" ")
                 .Select(int.Parse)
                 .ToArray();
 
             int sum = 0;
 
-            for (int i = 0; i < firstArr.Length; i++)
+            for (int i = 0; i < arr1.Length; i++)
             {
-
-                if (firstArr[i] == secondArr[i])
+                if (arr1[i] == arr2[i])
                 {
-                    sum += firstArr[i];
+                    sum += arr1[i];
                 }
                 else
                 {
@@ -31,8 +30,8 @@ namespace _07._Equal_Arrays
                     return;
                 }
             }
-
             Console.WriteLine($"Arrays are identical. Sum: {sum}");
+            
             
             //bool isEqual = arr1.SequenceEqual(arr2);
             ////  bool isEqual = Enumerable.SequenceEqual(arr1, arr2);
