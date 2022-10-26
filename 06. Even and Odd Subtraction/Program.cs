@@ -1,32 +1,28 @@
-﻿using System;
+using System;
 using System.Linq;
 
-namespace _06._Even_and_Odd_Subtraction
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[] num = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse)
-                .ToArray();
-
+            int[] arr = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
             int sumEven = 0;
             int sumOdd = 0;
 
-            for (int i = 0; i < num.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (num[i] % 2 == 0)
+                int n = arr[i];
+                if (n % 2 == 0)
                 {
-                    sumEven += num[i];
+                    sumEven += n;
                 }
-                else 
+                else if (n % 2 != 0)
                 {
-                    sumOdd += num[i];
+                    sumOdd += n;
                 }
             }
-
             Console.WriteLine(sumEven - sumOdd);
         }
     }
