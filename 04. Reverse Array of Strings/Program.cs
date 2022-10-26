@@ -1,23 +1,15 @@
 using System;
 using System.Linq;
 
-namespace _04._Reverse_Array_of_Strings
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string[] input = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
-                .ToArray();
+            string[] arr = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Reverse().ToArray();
 
-            Array.Reverse(input);
-            Console.WriteLine(string.Join(" ", input));
-
-            //for (int i = input.Length - 1; i >= 0; i--)
-            //{
-            //    Console.Write($"{input[i]} ");
-            //}
+            Console.WriteLine(string.Join(" ", arr));
         }
     }
 }
