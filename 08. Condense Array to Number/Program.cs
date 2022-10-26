@@ -1,30 +1,33 @@
-﻿using System;
+using System;
 using System.Linq;
 
-namespace _08._Condense_Array_to_Number
+namespace demo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[] arr = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse)
-                .ToArray();
+            int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
             int counter = arr.Length - 1;
-
-            for (int i = 0; i < arr.Length - 1; i++)
+            while (counter != 0)
             {
-                for (int j = 0; j < counter; j++)
+                for (int i = 0; i < counter; i++)
                 {
-                    arr[j] = arr[j] + arr[j + 1];
+                    arr[i] = arr[i] + arr[i + 1];
                 }
                 counter--;
-                
             }
-
             Console.WriteLine(arr[0]);
+
+            //for (int i = arr.Length - 1; i > 0; i--)
+            //{
+            //    for (int j = 0; j < i; j++)
+            //    {
+            //        arr[j] = arr[j] + arr[j + 1];
+            //    }
+            //}
+            //Console.WriteLine(arr[0]);
         }
     }
 }
