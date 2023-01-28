@@ -1,33 +1,26 @@
-using System;
-using System.Linq;
+int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+int counter = arr.Length - 1;
 
-namespace demo
+while (counter > 0)
 {
-    class Program
+    for (int i = 0; i < arr.Length - 1; i++)
     {
-        static void Main(string[] args)
-        {
-            int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
-
-            int counter = arr.Length - 1;
-            while (counter != 0)
-            {
-                for (int i = 0; i < counter; i++)
-                {
-                    arr[i] = arr[i] + arr[i + 1];
-                }
-                counter--;
-            }
-            Console.WriteLine(arr[0]);
-
-            //for (int i = arr.Length - 1; i > 0; i--)
-            //{
-            //    for (int j = 0; j < i; j++)
-            //    {
-            //        arr[j] = arr[j] + arr[j + 1];
-            //    }
-            //}
-            //Console.WriteLine(arr[0]);
-        }
+        arr[i] = arr[i] + arr[i + 1];
     }
+
+    counter--;
 }
+
+Console.WriteLine(arr[0]);
+
+
+//int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
+//for (int i = arr.Length - 1; i > 0; i--)
+//{
+//    for (int j = 0; j < i; j++)
+//    {
+//        arr[j] = arr[j] + arr[j + 1];
+//    }
+//}
+//Console.WriteLine(arr[0]);
