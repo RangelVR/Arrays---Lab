@@ -1,15 +1,3 @@
-using System;
-using System.Linq;
+string[] arr = Console.ReadLine().Split().Reverse().ToArray();
 
-namespace demo
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            string[] arr = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Reverse().ToArray();
-
-            Console.WriteLine(string.Join(" ", arr));
-        }
-    }
-}
+Console.WriteLine(string.Join(" ", arr));
