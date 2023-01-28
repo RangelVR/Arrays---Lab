@@ -17,7 +17,7 @@ namespace demo
             {
                 Console.Write(numbers[i] + " ");
             }
---------------------------------------------------------------
+
             //int n = int.Parse(Console.ReadLine());
             //int[] arr = new int[n];
             //
@@ -28,7 +28,7 @@ namespace demo
             //Array.Reverse(arr);
             //Console.WriteLine(string.Join(" ", arr));
 
---------------------------------------------------------------
+
             //for (int i = 0; i < n; i++)
             //{
             //    int currNum = int.Parse(Console.ReadLine());
@@ -40,7 +40,8 @@ namespace demo
             //}
             
             //int n = int.Parse(Console.ReadLine());
---------------------------------------------------------------
+
+            
             //int[] arr = new int[n];
             //int counter = n - 1;
 
