@@ -1,29 +1,45 @@
-using System;
-using System.Linq;
+int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+int[] evenArr = arr.Where(x => x % 2 == 0).ToArray();
+int[] oddArr = arr.Where(x => x % 2 != 0).ToArray();
+int evenSum = evenArr.Sum();
+int oddSum = oddArr.Sum();
 
-namespace demo
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int[] arr = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
-            int sumEven = 0;
-            int sumOdd = 0;
+Console.WriteLine(evenSum - oddSum);
+-------------------------------------------------------------
 
-            for (int i = 0; i < arr.Length; i++)
-            {
-                int n = arr[i];
-                if (n % 2 == 0)
-                {
-                    sumEven += n;
-                }
-                else if (n % 2 != 0)
-                {
-                    sumOdd += n;
-                }
-            }
-            Console.WriteLine(sumEven - sumOdd);
-        }
-    }
-}
+//int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
+//int evenSum = 0;
+//int oddSum = 0;
+
+//foreach (var number in arr.Where(x => x % 2 == 0))
+//{
+//    evenSum += number;
+//}
+
+//foreach (var number in arr.Where(x => x % 2 != 0))
+//{
+//    oddSum += number;
+//}
+
+//Console.WriteLine(evenSum - oddSum);
+-------------------------------------------------------------
+
+//int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
+//int evenSum = 0;
+//int oddSum = 0;
+
+//for (int i = 0; i < arr.Length; i++)
+//{
+//	if (arr[i] % 2 == 0)
+//	{
+//		evenSum += arr[i];
+//	}
+//	else
+//	{
+//		oddSum += arr[i];
+//	}
+//}
+
+//Console.WriteLine(evenSum - oddSum);
